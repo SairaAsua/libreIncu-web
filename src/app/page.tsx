@@ -146,11 +146,6 @@ export default function Home() {
           style={{ backgroundImage: 'radial-gradient(circle at 20% 80%, #f4b82c 0%, transparent 50%), radial-gradient(circle at 80% 20%, #f6c54f 0%, transparent 50%)' }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-6">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-lp-yellow/20 text-lp-yellow border border-lp-yellow/30">
-                Tecnología Libre · Código Abierto · CC BY 4.0
-              </span>
-            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-lp-white">
               Proyecto LibreIncu
               <span className="block text-lp-yellow text-3xl sm:text-4xl lg:text-5xl mt-2 font-bold">
@@ -174,22 +169,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Stat bar */}
-        <div className="relative border-t border-lp-yellow/20 bg-black/40">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: 'Hardware Libre', label: 'Incubadora LibreIncu' },
-              { value: 'Ecosistema', label: 'IoT Autónomo y Deshecado' },
-              { value: '100%', label: 'Código e info abierta' },
-              { value: 'Comunidad', label: 'Desarrollo en co-creación' },
-            ].map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-lp-yellow">{stat.value}</div>
-                <div className="text-lp-gray text-sm mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+
       </section>
 
       {/* Intro video */}
